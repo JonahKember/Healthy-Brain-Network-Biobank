@@ -2,7 +2,7 @@
 
 % For each participant, this script:
 % 1) Loads the 'contrast-change detection task' data.
-% 2) Time-locks it based on wither the responses or stimuli. 
+% 2) Time-locks it to the responses or stimuli. 
 % 3) Pre-processes the single-trial data (high-pass filter, baseline-correction, artifact rejection).
 % 4) Saves the time-locked ERP.
 
