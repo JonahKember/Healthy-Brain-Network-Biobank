@@ -1,11 +1,10 @@
 %% Load and Untar Raw Data
 
-IDs = readtable('D:\HBN Project\Phenotype Data\Importing Data\Participant_IDs.csv'); % Load csv file with participant IDs from Release 1 (2018).
-IDs = IDs{:,1};
+IDs = readtable('D:\HBN Project\Phenotype Data\Importing Data\Participant_IDs.csv'); IDs = IDs{:,1};  % Load csv file with participant IDs from Release 1 (2018).
 storage_location = 'D:\HBN Project\EEG Files';                              % Specify where data is to be stored.
 raw_data_location = 'D:\HBN Project\Raw EEG Files\';                        % Specify file locaton of raw data.
 
-for n = 403:length(IDs)     
+for n = 1:length(IDs)     
     if ~exist([storage_location,'\',IDs{n}], 'dir')                         % Only load participants that haven't been loaded yet.
         if exist([raw_data_location,IDs{n},'.tar'],'file')                  % Only load participants that have been downloaded already.
             tic
