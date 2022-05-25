@@ -8,7 +8,7 @@ set.seed(0) # Set seed for reproducibility
 
 ### Set parameters.
 
-n_reps = 1                              # Number of initializations.
+n_reps = 10                             # Number of initializations.
 n_obs = 150
 n_subj = 112
 state_names = c('S1','S2','S3','S4')
